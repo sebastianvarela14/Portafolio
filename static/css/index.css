@@ -164,10 +164,53 @@ img {
     width: 90%;
     max-width: var(--max-width);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    width: 220px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+    position: relative;
+}
+
+.hero-image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.20)
+        );
+    pointer-events: none;
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .hero-content {
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 
@@ -449,6 +492,14 @@ img {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .hero-container {
+        grid-template-columns: 1fr 280px;
+        gap: 40px;
+    }
+    .hero-image-wrapper {
+        width: 260px;
+        height: 330px;
+    }
 }
 
 
@@ -459,33 +510,44 @@ img {
 @media (max-width: 650px) {
     /* Navbar */
     .nav-links {
-        position: absolute;
-        top: 75px;
-        left: 0;
         width: 100%;
-        padding: 25px;
-        flex-direction: column;
-        gap: 20px;
-        background: var(--background);
-        border-bottom: 1px solid var(--border);
-        display: none;
+        justify-content: flex-end;
+        gap: 14px;
     }
-    .nav-links.active {
-        display: flex;
-    }
-    .menu-button {
-        display: block;
+    .nav-links a {
+        font-size: 0.75rem;
     }
     /* Hero */
     .hero {
-        min-height: 90vh;
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 45px;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .hero-image-wrapper {
+        width: 220px;
+        height: 280px;
+    }
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-buttons {
+        justify-content: center;
     }
     .hero h1 {
         font-size: clamp(2.8rem, 14vw, 4.5rem);
-    }
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
     }
     .btn {
         width: 100%;
