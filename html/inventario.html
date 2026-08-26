@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Sistema de Gestión de Inventario desarrollado para administrar productos, compras, ventas y gastos.">
+        <title>Sistema de Inventario | Juan Sebastián Varela</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../static/css/inventario.css">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+
+    <body>
+        <!-- ==================== NAVBAR ==================== -->
+        <header class="navbar">
+            <nav class="nav-container">
+                <a href="../index.html"
+                    class="back-link">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Portafolio
+                </a>
+                <a href="../index.html#proyectos"
+                    class="nav-projects">
+                    Proyectos
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ==================== HERO ==================== -->
+            <section class="project-hero">
+                <div class="project-container">
+                    <div class="project-hero-content">
+                        <p class="project-label">
+                            PROYECTO
+                        </p>
+                        <h1>
+                            Sistema de Gestión
+                            de Inventario DamaLuna
+                        </h1>
+                        <p class="project-intro">
+                            Aplicación desarrollada para gestionar
+                            de manera organizada productos, compras,
+                            ventas y gastos, centralizando la información
+                            y facilitando el control del inventario.
+                        </p>
+
+                        <!-- Tecnologías -->
+                        <div class="tech-tags">
+                            <span>
+                                Python
+                            </span>
+                            <span>
+                                Flask
+                            </span>
+                            <span>
+                                MySQL
+                            </span>
+                            <span>
+                                Electron
+                            </span>
+                            <span>
+                                HTML
+                            </span>
+                            <span>
+                                CSS
+                            </span>
+                            <span>
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Imagen principal -->
+                    <div class="project-hero-media">
+                        <div class="media-placeholder">
+                            <img src="../static/img/inventario_principal.png" alt="Imagen principal del proyecto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== SOBRE EL PROYECTO ==================== -->
+            <section class="project-section about-project">
+                <div class="project-container">
+                    <div class="section-header">
+                        <p class="section-subtitle">
+                            DESCRIPCIÓN
+                        </p>
+                        <h2>
+                            Sobre el proyecto
+                        </h2>
+                    </div>
+                    <div class="about-project-content">
+                        <div class="about-project-text">
+                            <p>
+                                Este proyecto consiste en una aplicación
+                                de gestión de inventario diseñada para
+                                centralizar y organizar diferentes procesos
+                                relacionados con el manejo de productos.
+                            </p>
+                            <p>
+                                El sistema permite administrar información
+                                de productos y controlar operaciones como
+                                compras, ventas y gastos desde una misma
+                                aplicación.
+                            </p>
+                            <p>
+                                El proyecto fue desarrollado buscando crear
+                                una solución funcional, organizada y fácil
+                                de utilizar, aplicando diferentes tecnologías
+                                de desarrollo de software.
+                            </p>
+                        </div>
+                        <div class="project-purpose">
+                            <div class="purpose-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3>
+                                Objetivo
+                            </h3>
+                            <p>
+                                Facilitar la administración del inventario
+                                y mantener la información organizada para
+                                mejorar el control de las operaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== FUNCIONALIDADES ==================== -->
+            <section class="project-section features">
+                <div class="project-container">
+                    <div class="section-header">
+                        <p class="section-subtitle">
+                            FUNCIONALIDADES
+                        </p>
+                        <h2>
+                            ¿Qué permite hacer?
+                        </h2>
+                    </div>
+                    <div class="features-grid">
+
+                        <!-- Productos -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <h3>
+                                Gestión de productos
+                            </h3>
+                            <p>
+                                Registro, consulta, edición y
+                                administración de los productos
+                                del inventario.
+                            </p>
+                        </article>
+
+                        <!-- Compras -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <h3>
+                                Compras
+                            </h3>
+                            <p>
+                                Registro y seguimiento de compras
+                                y de los productos asociados a cada
+                                operación.
+                            </p>
+                        </article>
+
+                        <!-- Ventas -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-cash-register"></i>
+                            </div>
+                            <h3>
+                                Ventas
+                            </h3>
+                            <p>
+                                Gestión de ventas y control de los
+                                productos involucrados en cada
+                                operación.
+                            </p>
+                        </article>
+
+                        <!-- Gastos -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                            </div>
+                            <h3>
+                                Gastos
+                            </h3>
+                            <p>
+                                Registro y organización de los gastos
+                                asociados a la operación.
+                            </p>
+                        </article>
+
+                        <!-- Exportación -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-file-export"></i>
+                            </div>
+                            <h3>
+                                Exportación de información
+                            </h3>
+                            <p>
+                                Posibilidad de exportar información
+                                para facilitar su consulta y manejo.
+                            </p>
+                        </article>
+
+                        <!-- Configuración -->
+                        <article class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <h3>
+                                Configuración
+                            </h3>
+                            <p>
+                                Administración de diferentes parámetros
+                                utilizados por el sistema.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== GALERÍA ==================== -->
+            <section class="project-section gallery">
+                <div class="project-container">
+                    <div class="section-header">
+                        <p class="section-subtitle">
+                            VISUAL
+                        </p>
+                        <h2>
+                            Galería del proyecto
+                        </h2>
+                        <p class="section-description">
+                            Algunas capturas de las diferentes
+                            funcionalidades y pantallas del sistema.
+                        </p>
+                    </div>
+                    <div class="gallery-grid">
+
+                        <!-- Imagen 1 -->
+                        <div class="gallery-item">
+                            <img
+                                src="../static/img/inventario_principal.png"
+                                alt="Gestión de productos del sistema de inventario">
+                            <div class="gallery-overlay">
+                                <span>
+                                    Productos
+                                </span>
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 2 -->
+                        <div class="gallery-item">
+                            <img
+                                src="../static/img/inventario_ventas.png"
+                                alt="Módulo de ventas">
+                            <div class="gallery-overlay">
+                                <span>
+                                    Ventas
+                                </span>
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div class="gallery-item">
+                            <img
+                                src="../static/img/inventario_compras.png"
+                                alt="Módulo de compras">
+                            <div class="gallery-overlay">
+                                <span>
+                                    Compras
+                                </span>
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+
+
+                        <!-- Imagen 4 -->
+                        <div class="gallery-item">
+                            <img
+                                src="../static/img/inventario_gastos.png"
+                                alt="Módulo de gastos">
+                            <div class="gallery-overlay">
+                                <span>
+                                    Gastos
+                                </span>
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+
+                        <!-- Imagen 5 -->
+                        <div class="gallery-item">
+                            <img
+                                src="../static/img/inventario_config.png"
+                                alt="Configuración del sistema">
+                            <div class="gallery-overlay">
+                                <span>
+                                    Configuración
+                                </span>
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== VIDEO ==================== -->
+            <section class="project-section demo">
+                <div class="project-container">
+                    <div class="section-header">
+                        <p class="section-subtitle">
+                            DEMOSTRACIÓN
+                        </p>
+                        <h2>
+                            El proyecto en funcionamiento
+                        </h2>
+                        <p class="section-description">
+                            Una demostración del funcionamiento
+                            y las principales características
+                            del sistema.
+                        </p>
+                    </div>
+                    <div class="video-container">
+                        <video controls>
+                            <source
+                                src="../static/mp4/inventario.mp4"
+                                type="video/mp4">
+                            Tu navegador no soporta la reproducción
+                            de videos.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== TECNOLOGÍAS ==================== -->
+            <section class="project-section technologies-project">
+                <div class="project-container">
+                    <div class="section-header">
+                        <p class="section-subtitle">
+                            DESARROLLO
+                        </p>
+                        <h2>
+                            Tecnologías utilizadas
+                        </h2>
+                    </div>
+                    <div class="project-tech-grid">
+                        <div class="project-tech-card">
+                            <i class="fa-brands fa-python"></i>
+                            <h3>
+                                Python
+                            </h3>
+                            <p>
+                                Lógica y desarrollo principal
+                                de la aplicación.
+                            </p>
+                        </div>
+                        <div class="project-tech-card">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>
+                                Flask
+                            </h3>
+                            <p>
+                                Backend y comunicación entre
+                                la aplicación y los datos.
+                            </p>
+                        </div>
+                        <div class="project-tech-card">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>
+                                MySQL
+                            </h3>
+                            <p>
+                                Gestión y almacenamiento de
+                                la información.
+                            </p>
+                        </div>
+                        <div class="project-tech-card">
+                            <i class="fa-solid fa-desktop"></i>
+                            <h3>
+                                Electron
+                            </h3>
+                            <p>
+                                Aplicación de escritorio e
+                                integración de la interfaz.
+                            </p>
+                        </div>
+                        <div class="project-tech-card">
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>
+                                HTML & CSS
+                            </h3>
+                            <p>
+                                Estructura y diseño de la
+                                interfaz.
+                            </p>
+                        </div>
+                        <div class="project-tech-card">
+                            <i class="fa-brands fa-js"></i>
+                            <h3>
+                                JavaScript
+                            </h3>
+                            <p>
+                                Interactividad y comportamiento
+                                de la interfaz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== VOLVER ==================== -->
+            <section class="project-end">
+                <a href="../index.html#proyectos"
+                    class="back-projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Volver a proyectos
+                </a>
+            </section>
+        </main>
+
+        <!-- ==================== LIGHTBOX ==================== -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close"
+                aria-label="Cerrar imagen">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img
+                id="lightbox-image"
+                src=""
+                alt="">
+        </div>
+
+        <!-- JavaScript -->
+        <script src="../static/js/inventario.js"></script>
+    </body>
+</html>
